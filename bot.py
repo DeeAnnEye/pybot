@@ -1,4 +1,5 @@
 import os
+import random
 
 import discord
 from dotenv import load_dotenv
@@ -14,7 +15,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     print(f'{client.user.name} has connected to Discord!')
- 
+
 
 @client.event
 async def on_member_join(member):
@@ -26,12 +27,29 @@ async def on_member_join(member):
 
 @client.event
 async def on_message(message):
+
+    hello_quotes = [
+        'hey🤖',
+        'hello😉',
+        'Hello World...'
+    ]
+
+    how_quotes = [
+        'fine',
+        'doing good😉'
+    ]
+
     # don't respond to ourselves
     if message.author == client.user:
         return
 
     if message.content == 'hello':
-        await message.channel.send('hello world')
+        reply = random.choice(hello_quotes)
+        await message.channel.send(reply)
+
+    if message.content == 'how are u?':
+        reply = random.choice(how_quotes)
+        await message.channel.send(reply)
 
 
 client.run(TOKEN)
