@@ -1,8 +1,6 @@
 # PyBot - Discord Bot
 
 #### A discord bot which, at the moment, responds to some basic commands.
-<br>
-
 ##### Call the bot by using ```!``` before bot commands.
 
 ## Clone this repository
