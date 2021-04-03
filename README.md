@@ -6,3 +6,5 @@
 ## Clone this repository
 
 ```$ git clone https://github.com/DeeAnnEye/pybot.git```
+
+![GitHub repo size](https://img.shields.io/github/repo-size/DeeAnnEye/pybot) ![GitHub language count](https://img.shields.io/github/languages/count/DeeAnnEye/pybot) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DeeAnnEye/pybot) ![GitHub last commit](https://img.shields.io/github/last-commit/DeeAnnEye/pybot)
